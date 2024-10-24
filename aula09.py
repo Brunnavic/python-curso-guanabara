@@ -103,15 +103,15 @@ print(posi)'''
     #EX: Ana Maria Souza
     #primeiro: Ana
     #ultimo: Souza
-
+'''
 nome = input('Digite seu nome completo:')
 separado = nome.split() 
 print('Primeiro nome:{}'.format(separado [0]))
 print('último nome: {}'.format(separado [-1]))
+'''
 
 
 
-#Desafio028
 
 
 
