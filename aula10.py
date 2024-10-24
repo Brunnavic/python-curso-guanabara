@@ -161,7 +161,7 @@ else:
     # Faça um programa que mostre o comprimento de 3 retas e
     # diga ao usuário se elas podem ou não formar um triângulo.
         
-       
+'''      
 reta1 = float(input("Digite o tamanho da reta 1: "))
 reta2 = float(input("Digite o tamanho da reta 2: "))
 reta3 = float(input("Digite o tamanho da reta 3: "))
@@ -171,5 +171,6 @@ if (reta1 + reta2 > reta3) and (reta1 + reta3 > reta2) and (reta2 + reta3 > reta
     print("Pode ser um triângulo")
 else:
     print("Não pode ser um triângulo")
-
+    
+'''
 
