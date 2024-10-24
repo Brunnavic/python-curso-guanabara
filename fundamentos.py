@@ -185,7 +185,7 @@ print('Sua temperatura {} em Grau Celsius corresponde a {} em Graus Fahrenheit'.
     #alugado. Calcule o preço a pagar, sabendo que o carro custa R$60,00
     #o dia e R$0,15 por km rodado.
 
-'''
+
 quant_km = float(input('Qual a quantidade de km percorrido?'))
 quant_dias = int(input('Qual a quantidade de dias alugado'))
 carro = 60
@@ -193,6 +193,6 @@ dia = 0.15
 preco = (quant_km * dia) + (carro * quant_dias)
 
 print('O Preço do Aluguel ficou R${}'.format(preco))
-'''
+
 
 

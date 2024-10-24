@@ -94,7 +94,7 @@ print('O professor tem esses alunos:{},{},{},{} mas o escolhido foi {}'.format(a
     #Faça um programa que leia o nome dos quatro
     #alunos e mostre a ordem sorteada.
 
-'''
+
 import random
 
 alunoA = input('digite seu nome:')
@@ -106,7 +106,7 @@ sorteio = [alunoA, alunoB, alunoC, alunoD]
 random.shuffle(sorteio)
 print('A ordem de apresentação será:')
 print(sorteio)
-'''
+
 
 
 #Desafio21
@@ -118,5 +118,6 @@ pygame.init()
 pygame.mixer.music.load('ex021.mp3')
 pygame.mixer.music.play()
 pygame.event.wait()
-
 '''
+
+
