@@ -14,6 +14,7 @@ print("Bom dia, {}!".format(nome))
 '''    
 
 # Desafio 036
+
 # Escreva um programa para aprovar o empréstimo
 # bancário para a compra de uma casa. O programa vai perguntar
 # O VALOR da casa, O SALÁRIO do comprador, e EM QUANTOS ANOS ele vai pagar.
@@ -38,6 +39,7 @@ else:
 '''
 
 # Desafio037
+
 # Escreva um programa que leia um número inteiro
 # qualquer e peça para o usuário escolher qual será
 # a base de conversão:
@@ -63,6 +65,7 @@ elif conversao == 3:
 '''
 
 # Desafio038
+
 # Escreva um programa que leia dois números inteiros
 # e compare-os, mostrando na tela uma mensagem:
 # O primeiro valor é maior
@@ -84,6 +87,7 @@ elif num1 == num2:
 '''    
     
 # Desafio039
+
 # Faça um programa que leia o ano de nascimento de um jovem
 # e informe de acordo com sua idade:
 # Se ele ainda vai se alistar ao serviço militar
@@ -91,7 +95,7 @@ elif num1 == num2:
 # Se já passou do tempo de alistamento
 # Seu programa deverá também mostrar o tempo que falta ou que passou do prazo.
 
-
+'''
 from datetime import datetime
 
 ano = int(input("Qual o ano do seu nascimento?"))
@@ -111,3 +115,62 @@ elif idade > 18:
 
 elif idade == 18:
     print("Você tem {} anos, é a hora de se alistar!".format(idade))
+'''
+
+# Desafio040
+
+# Crie um programa que leia duas notas de um aluno
+# e calcule sua média, mostrando uma mensagem no final, de acordo
+# com a média atingida:
+# Média abaixo de 5.0: Reprovado
+# Média entre 5.0 e 6.9: Recuperação
+# Média 7.0 ou superior: Aprovado
+
+'''
+nota1 = float(input("Digite sua primeira nota:"))
+nota2 = float(input("Digite sua segunda nota:"))
+
+media = (nota1 + nota2) / 2
+
+if media < 5.0:
+    print("REPROVADO! {}".format(media))
+    
+elif media > 5.0 and media <= 6.9:
+    print("RECUPERAÇÂO! {}".format(media))
+    
+elif media >= 7.0:
+    print("APROVADO! {}".format(media))
+'''
+
+# Desafio041
+# A Confederação nacional de Natação precisa de 
+# um programa que leia o ano de nascimento de um atleta
+# e mostre sua categoria, de acordo com a idade:
+# Até 9 anos: MIRIM
+# Até 14 anos: INFANTIL
+# Até 19 anos: JUNIOR
+# Até 20 anos: SENIOR
+# Acima: MASTER
+
+from datetime import datetime
+
+ano_atual = datetime.now().year
+
+ano = int(input("Digite o ano em que você nasceu:"))
+
+idade = ano_atual - ano
+
+if idade <= 9:
+    print("Você tem {} anos, e sua categoria é: MIRIM".format(idade))
+    
+elif idade > 9 and idade <= 14:
+    print("Você tem {} anos, e sua categoria é: INFANTIL".format(idade))
+    
+elif idade > 14 and idade <= 19:
+    print("Você tem {} anos, e sua categoria é: JUNIOR".format(idade))
+    
+elif idade > 19 and idade <= 20:
+    print("Você tem {} anos, e sua categoria é: SENIOR".format(idade))
+    
+else:
+    print("Você tem {} anos, e sua categoria é: MASTER".format(idade))
