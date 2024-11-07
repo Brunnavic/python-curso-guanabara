@@ -210,6 +210,7 @@ else:
 '''
 
 # Desafio043
+
 # Desenvolva uma lógica que leia o peso e a altura
 # de uma pessoa, calcule seu IMC e mostre seu status, de acordo
 # com a tabela abaixo:
@@ -219,7 +220,7 @@ else:
 # 30.0 até 40.0: Obesidade
 # Acima de 40.0: Obesidade Mórbida    
 
-
+'''
 peso = float(input("Digite seu Peso:"))
 altura = float(input("Digite sua Altura:"))
 imc = peso / (altura * altura)
@@ -238,9 +239,72 @@ elif imc > 30 and imc < 40.0:
     
 else:
     print("Seu IMC é {}, está acima de 40.0, portanto você está com Obesidade Mórbida !".format(imc))
+'''
 
 
+# Desafio044
 
+# Elabore um programa que calcule o valor a ser pago por um produto
+# considerando o seu preço normal e condição de pagamento:
+# À vista dinheiro / pix: 10% de desconto (-10 %) 
+# À vista no cartão: 5% de desconto (-5 %)
+# Em até 2x no cartão: preço normal
+# 3x ou mais no cartão: 20% de juros
+
+'''
+produto = float(input("Qual o valor do seu produto?"))
+pagamento = str(input("Qual a forma de pagamento você quer usar?")) .strip().upper()
+
+
+porcentagem_10 = (produto * 10) / 100
+
+porcentagem_5 = (produto * 5) / 100
+
+porcentagem_20 = (produto * 20) / 100
+
+if pagamento == "PIX" or pagamento == "DINHEIRO":
+    valor = produto - porcentagem_10
+    print("Como você vai pagar no {}, terá 10 % de desconto, ficando por R${}!".format(pagamento, valor))
+    
+elif pagamento == "A VISTA NO CARTÃO" or pagamento == "À VISTA NO CARTÃO":
+    valor = produto - porcentagem_5
+    print("Como você vai pagar no {}, terá 5 % de desconto, ficando por R${}!".format(pagamento, valor))
+    
+elif pagamento == "2X NO CARTÃO" or pagamento == "2 VEZES NO CARTÃO":
+    print("Como você vai pagar  {}, o valor será normal, ficando por R${}!".format(pagamento, produto))
+    
+else:
+    valor = produto + porcentagem_20
+    print("Como você vai pagar  {}, o valor será com 20 % de juros, ficando por R${}!".format(pagamento, valor))
+    
+ '''
+ 
+# Desafio045
+# Crie um programa que faça o computador jogar Jokenpô com você!
+
+from random import choice
+
+jogador = str(input("Vamos jogar? Escolha Pedra, Papel ou Tesoura!")) .strip() .upper()
+computador = ["PEDRA", "PAPEL", "TESOURA"]
+sorteio = choice(computador)
+
+print("O computador escolheu: {}".format(sorteio))
+
+
+if jogador == sorteio:
+    print("Empate!")
+elif jogador == "PEDRA" and sorteio == "TESOURA":
+    print("Você ganhou! Pedra vence Tesoura.")
+elif jogador == "PAPEL" and sorteio == "PEDRA":
+    print("Você ganhou! Papel vence Pedra.")
+elif jogador == "TESOURA" and sorteio == "PAPEL":
+    print("Você ganhou! Tesoura vence Papel.")
+elif sorteio == "PEDRA" and jogador == "TESOURA":
+    print("Você perdeu! Pedra vence Tesoura.")
+elif sorteio == "PAPEL" and jogador == "PEDRA":
+    print("Você perdeu! Papel vence Pedra.")
+elif sorteio == "TESOURA" and jogador == "PAPEL":
+    print("Você perdeu! Tesoura vence Papel.")
 
 
 
