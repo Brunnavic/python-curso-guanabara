@@ -143,6 +143,7 @@ elif media >= 7.0:
 '''
 
 # Desafio041
+
 # A Confederação nacional de Natação precisa de 
 # um programa que leia o ano de nascimento de um atleta
 # e mostre sua categoria, de acordo com a idade:
@@ -152,12 +153,11 @@ elif media >= 7.0:
 # Até 20 anos: SENIOR
 # Acima: MASTER
 
+'''
 from datetime import datetime
 
 ano_atual = datetime.now().year
-
 ano = int(input("Digite o ano em que você nasceu:"))
-
 idade = ano_atual - ano
 
 if idade <= 9:
@@ -174,3 +174,73 @@ elif idade > 19 and idade <= 20:
     
 else:
     print("Você tem {} anos, e sua categoria é: MASTER".format(idade))
+'''
+
+# Desafio042
+
+# Refaça o desafio035 dos triângulos
+# e acrescente o recurso de mostrar que tipo de triângulo será formado:
+# Equilátero: Todos os lados iguais
+# Isósceles: Dois lados iguais
+# Escaleno: todos os lados diferentes
+
+    #Desafio035
+    # Faça um programa que mostre o comprimento de 3 retas e
+    # diga ao usuário se elas podem ou não formar um triângulo.
+        
+'''    
+reta1 = float(input("Digite o tamanho da reta 1: "))
+reta2 = float(input("Digite o tamanho da reta 2: "))
+reta3 = float(input("Digite o tamanho da reta 3: "))
+
+# Verifica se as três condições da desigualdade triangular são verdadeiras
+if (reta1 + reta2 > reta3) and (reta1 + reta3 > reta2) and (reta2 + reta3 > reta1):
+    print("Pode ser um triângulo")
+    if reta1 == reta2 and reta1 == reta3 and reta2 == reta3:
+        print("É um triangulo Equilátero")
+    
+    elif (reta1 == reta2 and reta1 != reta3) or (reta1 == reta3 and reta1 != reta2) or (reta2 == reta3 and reta2 != reta1):
+        print("É um triangulo Isósceles")
+        
+    else:
+        print("É um triangulo Escaleno")
+        
+else:
+    print("Não pode ser um triângulo")
+'''
+
+# Desafio043
+# Desenvolva uma lógica que leia o peso e a altura
+# de uma pessoa, calcule seu IMC e mostre seu status, de acordo
+# com a tabela abaixo:
+# Abaixo de 18.5: Abaixo do peso
+# Entre 18.5 e 25: Peso ideal
+# 25.0 até 30.0: Sobrepeso
+# 30.0 até 40.0: Obesidade
+# Acima de 40.0: Obesidade Mórbida    
+
+
+peso = float(input("Digite seu Peso:"))
+altura = float(input("Digite sua Altura:"))
+imc = peso / (altura * altura)
+
+if imc < 18.5:
+    print("Seu IMC é {}, está abaixo de 18.5, portanto você está abaixo do peso!".format(imc))
+    
+elif imc >= 18.5 and  imc <= 25:
+    print("Seu IMC é {}, está entre 18.5 e 25.0, portanto você está com o peso ideal!".format(imc))
+    
+elif imc > 25 and imc < 30.0:
+    print("Seu IMC é {}, está entre 25.0 e 30.0, portanto você está acima do peso!".format(imc))
+    
+elif imc > 30 and imc < 40.0:
+    print("Seu IMC é {}, está entre 30.0 e 40.0, portanto você está acima do peso!".format(imc))
+    
+else:
+    print("Seu IMC é {}, está acima de 40.0, portanto você está com Obesidade Mórbida !".format(imc))
+
+
+
+
+
+
