@@ -62,6 +62,7 @@ elif conversao == 2:
 elif conversao == 3:
     num_hexadecimal = hex(num)
     print("O valor que você digitou foi {}, que corresponde á {} em Octal".format(num, num_hexadecimal))
+
 '''
 
 # Desafio038
@@ -251,7 +252,7 @@ else:
 # Em até 2x no cartão: preço normal
 # 3x ou mais no cartão: 20% de juros
 
-'''
+
 produto = float(input("Qual o valor do seu produto?"))
 pagamento = str(input("Qual a forma de pagamento você quer usar?")) .strip().upper()
 
@@ -277,11 +278,12 @@ else:
     valor = produto + porcentagem_20
     print("Como você vai pagar  {}, o valor será com 20 % de juros, ficando por R${}!".format(pagamento, valor))
     
- '''
+ 
  
 # Desafio045
 # Crie um programa que faça o computador jogar Jokenpô com você!
 
+'''
 from random import choice
 
 jogador = str(input("Vamos jogar? Escolha Pedra, Papel ou Tesoura!")) .strip() .upper()
@@ -305,6 +307,7 @@ elif sorteio == "PAPEL" and jogador == "PEDRA":
     print("Você perdeu! Papel vence Pedra.")
 elif sorteio == "TESOURA" and jogador == "PAPEL":
     print("Você perdeu! Tesoura vence Papel.")
-
+    
+'''
 
 
