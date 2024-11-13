@@ -252,7 +252,7 @@ else:
 # Em até 2x no cartão: preço normal
 # 3x ou mais no cartão: 20% de juros
 
-
+'''
 produto = float(input("Qual o valor do seu produto?"))
 pagamento = str(input("Qual a forma de pagamento você quer usar?")) .strip().upper()
 
@@ -278,7 +278,7 @@ else:
     valor = produto + porcentagem_20
     print("Como você vai pagar  {}, o valor será com 20 % de juros, ficando por R${}!".format(pagamento, valor))
     
- 
+''' 
  
 # Desafio045
 # Crie um programa que faça o computador jogar Jokenpô com você!
