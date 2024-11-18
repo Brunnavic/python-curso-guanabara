@@ -82,7 +82,7 @@ for index in range(0,11):
 # Desenvolva um programa que leia 6 números inteiros
 # e mostre a soma apenas daqueles que forem pares. Se o valor 
 # digitado for ímpar, desconsidere-o.
-
+'''
 soma = 0
 
 for index in range(0,6):
@@ -93,6 +93,8 @@ for index in range(0,6):
         
 print("A soma dos números pares é {}".format(soma))
              
+'''
+
 
             
         
