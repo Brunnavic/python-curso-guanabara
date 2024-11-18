@@ -67,7 +67,7 @@ print(s)
 
 # Refaça o desafio 009, mostrando a tabuada de um número
 # que o usuário escolher, só que agora usando o laço for.
-
+'''
 num = int(input("Digete o número que você quer saber a tabuada:"))
 
 print("A tabuada de {} é:".format(num))  
@@ -76,8 +76,27 @@ for index in range(0,11):
     tabuada = num * index
     #print(tabuada)
     print(num,'X',index,'=', tabuada)
- 
+'''
+
+# Desafio050
+# Desenvolva um programa que leia 6 números inteiros
+# e mostre a soma apenas daqueles que forem pares. Se o valor 
+# digitado for ímpar, desconsidere-o.
+
+soma = 0
+
+for index in range(0,6):
+    num = int(input("Digite um número inteiro:"))
+    if num % 2 == 0:
+        soma += num
     
+        
+print("A soma dos números pares é {}".format(soma))
+             
+
+            
+        
+ 
     
     
     
