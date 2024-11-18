@@ -68,6 +68,20 @@ print(s)
 # Refaça o desafio 009, mostrando a tabuada de um número
 # que o usuário escolher, só que agora usando o laço for.
 
+num = int(input("Digete o número que você quer saber a tabuada:"))
+
+print("A tabuada de {} é:".format(num))  
+
+for index in range(0,11):
+    tabuada = num * index
+    #print(tabuada)
+    print(num,'X',index,'=', tabuada)
+ 
+    
+    
+    
+    
+
 
 
 
