@@ -65,4 +65,17 @@ print(s)
 
 # Desafio049
 
-# 
+# Refaça o desafio 009, mostrando a tabuada de um número
+# que o usuário escolher, só que agora usando o laço for.
+
+
+
+
+
+
+
+
+
+
+
+
