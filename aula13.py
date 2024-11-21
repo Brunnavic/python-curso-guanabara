@@ -100,10 +100,15 @@ print("A soma dos números pares é {}".format(soma))
 # e a razão de uma progressão aritmética. No final mostre os 
 # 10 primeiros termos dessa progressão.
 
-
-            
-        
- 
+'''
+termo1 = int(input("Qual o primeiro termo da sua PA?:"))  
+razao = int(input("Qual a razão da sua PA?:"))        
+progre = termo1                 #Aqui a progre começa com o termo1 porque quero começar a partir do 
+                                # número que o usuário digitar e não do 0, como achei no inicio.
+for index in range(0,10,):
+    progre += razao
+    print(progre)       
+'''
     
     
     
