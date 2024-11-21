@@ -95,6 +95,11 @@ print("A soma dos números pares é {}".format(soma))
              
 '''
 
+# Desafio051
+# Desenvolva um programa que leia o peimeiro termo
+# e a razão de uma progressão aritmética. No final mostre os 
+# 10 primeiros termos dessa progressão.
+
 
             
         
