@@ -140,6 +140,11 @@ else:
 # OBSERVAÇÃO: ESSE DESAFIO ACHEI MAIS DIFÍCIL ATÉ AGORA O 052!    
 
 
+# Desafio 053
+# Crie um programa que leia uma frase qualquer e diga se ela é
+# políndromo, desconsiderando os espaços.
+
+
 
 
 
