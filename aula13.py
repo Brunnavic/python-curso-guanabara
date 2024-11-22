@@ -110,8 +110,34 @@ for index in range(0,10,):
     print(progre)       
 '''
     
+# Desafio052
+# Faça um programa que leia um número inteiro
+# e diga se ele é ou não um número primo.
+# Número primo = que é divisível por 1 e por ele mesmo.
+'''
+# Solicita ao usuário que insira um número inteiro
+num = int(input("Digite um número inteiro: "))
+
+# Verifica se o número é menor que 2, já que números menores que 2 não são primos
+if num < 2:
+    print(f"O número {num} NÃO é primo.")
+else:
+    # Assume inicialmente que o número é primo
+    eh_primo = True
     
+    # Verifica se o número é divisível por qualquer valor de 2 até num - 1
+    for index in range(2, num):
+        if num % index == 0:
+            eh_primo = False  # Achou um divisor, então não é primo
+            break  # Sai do loop, já sabemos que não é primo
     
+    # Exibe o resultado baseado no valor da variável eh_primo
+    if eh_primo:
+        print(f"O número {num} é primo!")
+    else:
+        print(f"O número {num} NÃO é primo.")
+'''
+# OBSERVAÇÃO: ESSE DESAFIO ACHEI MAIS DIFÍCIL ATÉ AGORA O 052!    
 
 
 
